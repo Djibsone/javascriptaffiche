@@ -7,6 +7,7 @@ function readURL(photo) {
 
         reader.onload = function(e) {
             //document.getElementById('ig').src = e.target.result;
+            console.log(e);
             ig.src = e.target.result;
         };
         reader.readAsDataURL(photo.files[0]);
